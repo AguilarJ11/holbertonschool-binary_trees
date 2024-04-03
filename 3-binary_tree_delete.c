@@ -20,6 +20,8 @@ void binary_tree_delete(binary_tree_t *tree)
 		if (!tree->right && !tree->left)
 		{
 			aux = tree;
+			aux->left = NULL;
+			aux->right = NULL;
 			if (aux->parent)
 			tree = aux->parent;
 			free(aux);
