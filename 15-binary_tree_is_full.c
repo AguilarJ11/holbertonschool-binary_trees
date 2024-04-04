@@ -10,12 +10,12 @@ int binary_tree_is_full(const binary_tree_t *tree)
 {
 	int hl = 0, hr = 0;
 
-	if (!tree) 
+	if (!tree)
 		return (0);
-			
+
 	hl = binary_tree_is_full(tree->left) + 1;
 	hr = binary_tree_is_full(tree->right) + 1;
-	
+
 	if (hl == hr)
 		return (1);
 
