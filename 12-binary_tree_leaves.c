@@ -2,8 +2,8 @@
 
 /**
  *binary_tree_leaves - measures the leaf of a binary tree
- *@tree - entry pointer
- *Return - leafs
+ *@tree: entry pointer
+ *Return: leafs
  */
 
 size_t binary_tree_leaves(const binary_tree_t *tree)

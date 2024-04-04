@@ -8,16 +8,12 @@
 
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
-	size_t hl, hr;
 
-	if ((!tree) || (!tree->left && !tree->right))
+	if (!tree)
 		return (0);
 
-	hl = binary_tree_depth(tree->left);
-	hr = binary_tree_depth(tree->right);
+	if (tree->parent)
+		return (binary_tree_depth(tree->parent) + 1);
 
-	if (hl > hr)
-		return (hl);
-	else
-		return (hr);
+		return (0);
 }
