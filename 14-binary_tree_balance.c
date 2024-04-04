@@ -10,7 +10,7 @@ int bt_hi(const binary_tree_t *tree)
 {
 	size_t hl = 0, hr = 0;
 
-	if ((!tree) || (!tree->left && !tree-right))
+	if ((!tree) || (!tree->left && !tree->right))
 		return (0);
 
 	if (tree->left)
